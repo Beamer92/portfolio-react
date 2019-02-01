@@ -1,0 +1,15 @@
+{
+    "homePage": {
+        "aboutMe" : {
+            "1": "Hi! I'm Brendan and I love a creative challenge. I'm always looking for a project: whether it be code-based, fixing something, or making a costume. Recently I've been 3D printing and painting my own D&D miniatures to use in the group I Dungeon Master for.",
+            "2": "When I'm not in class or working on a project you can find me on the turf playing Ultimate Frisbee with my team."
+        },
+        "workingOn" :{
+            "1": {"title": "Attending Galvanize",
+                    "body" : "- Full Stack Web Development Immersive Program - Graduating March '19"},
+            "2": {"title": "Side Projects", "body": "- Alexa Skill to find me a random brewery in the area to check out"}
+        }
+
+    }
+
+}
