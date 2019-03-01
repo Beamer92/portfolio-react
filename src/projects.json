@@ -1,15 +1,56 @@
 {
     "homePage": {
-        "aboutMe" : {
+        "aboutMe": {
             "1": "Hi! I'm Brendan and I love a creative challenge. I'm always looking for a project: whether it be code-based, fixing something, or making a costume. Recently I've been 3D printing and painting my own D&D miniatures to use in the group I Dungeon Master for.",
             "2": "When I'm not in class or working on a project you can find me on the turf playing Ultimate Frisbee with my team."
         },
-        "workingOn" :{
-            "1": {"title": "Attending Galvanize",
-                    "body" : "- Full Stack Web Development Immersive Program - Graduating March '19"},
-            "2": {"title": "Side Projects", "body": "- Alexa Skill to find me a random brewery in the area to check out"}
+        "workingOn": {
+            "1": {
+                "title": "Attending Galvanize",
+                "body": "- Full Stack Web Development Immersive Program - Graduating March '19"
+            },
+            "2": {
+                "title": "Side Projects",
+                "body": "- Alexa Skill to find me a random brewery in the area to check out"
+            }
         }
-
-    }
-
+    },
+    "projects": [
+        {
+            "title": "Adventure Puzzle",
+            "blurb": "Adventure inspired puzzle game, move around the grid to find hidden toggles to unlock hidden doors and move through the levels",
+            "github": "github.com/Beamer92/adventurePuzzle",
+            "explanation": "At Galvanize our Q1 project was focused around a static front-end site. I decided that this was a perfect opportunity to stretch my knowledge of HTML and CSS styling by making a grid-based game and using the re-render to move a piece around the DOM.",
+            "exp2": "",
+            "goals": "['Render a grid with the dimensions intended', 'Render the player correctly on it's location as it moves about the grid, 'Create a full game with multiple playable levels and scoring']",
+            "img": "https://github.com/Beamer92/Hangman-Game/blob/master/Screenshot.PNG?raw=true",
+            "challenges": "[]",
+            "outcome": "The most demanding part ended up being puzzle generation. Since each map is 2D array I had to generate them all in a way that makes sense, then figure out the mechanics of each. Easy, but time consuming. The most difficult part was making sure the visual aspect was a level of quality I was satisfied with. Making sure the grid resized well and visual aspect were responsive enough. The whole project was extremely fun to do. I also had a great group of testers to help point out flaws. Start to finish the project took me about a week and a half to complete outside of work and I'm pretty proud of it",
+            "deployment": "https://adventurepuzzle.surge.sh/"
+        },
+        {
+            "title": "My Queue",
+            "blurb": "How often does someone recommend a song or video for you to watch later, but you never get around to it? The solution? My Queue!",
+            "github": "https://github.com/q-three",
+            "explanation": "This project served as a group project for Q3 at Galvanize. My teammate Dylan and I created a Full-Stack Queue application that allows you and your friends to add cards to your own and each other's queues. These cards show up according to their category and link to the intended item. We also decided that navigating to a website just to add to a queue was too unweildy in most situations, so we decided to pair our app with a Chrome Extension. I'd build a Chrome Extension before and was confident we could do it nicely.",
+            "exp2": "The main app is built with React and Redux on an Express.js API server, while the Chrome Extension is just a React App that talks to the same back-end",
+            "goals": "['Practice React and Redux', 'Learn about and create a Chrome Extension that uses it's own local storage for logins, 'Build a functional, professional looking queue application that looks good on mobile or desktop']",
+            "challenges": "['One challenge I faced was working with the Extension's local storage, Extensions have their own local storage that i had to locate and learn how to work with so I could login/out with my user token', 'This was my first practical application of Redux so it took some effort. I was slow at first but picked up speed as I got more comfortable with it']",
+            "img": "https://github.com/q-three/my-queue/blob/master/screenshots/login.gif?raw=true",
+            "outcome": "We came out with a pretty polished application and the extension paired very nicely with it. I'm pretty proud of how we were able to get everything done within the short time-span we had",
+            "deployment": "https://infinite-fortress-92682.herokuapp.com/"
+        },
+        {
+            "title": "Rabble Rover",
+            "blurb": "You're a NASA scientist in charge of the Mars Rover program, but hold on. The rocks on Mars are all curiously shaped like English letters! Race to collect the best letters before the other country's rovers and snag the high score!",
+            "github": "github.com/Beamer92/rabble-fe",
+            "explanation": "For my Final project at Galvanize I wanted to learn a few new things and try to measure my growth in the program with another game! I enjoy making games because I love making things people enjoy and find challenging. What I decided on was a type of reverse-Scrabble multiplayer game! You and up to 3 other players per game control a Rover on a grid. Each square on this grid contains a letter for you to pick up. You issue instructions to your Rover as a combination of 3 commands: 'Rotate Right', 'Rotate Left', 'Move Forward'. You must plan your route and execute the instructions all at once, if you land on a square with a letter then you pick it up! You may drop any letter at any time, but the word you build must be in order. Clever players might try and hoard vowels from other players then drop them (once they're dropped they're gone forever). At the end, you can submit your word for scoring and see how you stack up against the other players.",
+            "exp2": "The back end is made up of an Express API server that stored user information in a MongoDB, using Mongoose to talk back and forth. This was my first look at a NoSQL database and I was excited to look at some of the features. I'm using Socket.io to allow for a multiplayer environment and Redis to store the game-state as a cached item, then easily discard when done. The real-time interaction aspect was something I thought was really interesting and having fast-accesible storage in Redis was a really neat concept I wanted to look at. The front end is a React project.",
+            "goals": "['Learn about Redis and how it stores data in a cache-state as an alternative to using database storage', 'Learn about Socket.io and real-time user interaction', 'Explore a NoSql database', 'Create a fun and engaging game, then create it with code']",
+            "challenges": "['Figuring out how I wanted to structure my Redis data took some time, and redesigns, and more redesigns', 'Running a game-loop through socket.io and alerting all user's React states to request and re-render data at the correct times', 'Closing the game loop by savings connected users, removing the old game,creating a new one, then adding those users back to it']",
+            "img": "https://github.com/Beamer92/rabble-fe/blob/master/src/imgs/screenshots/RoverSC1.png?raw=true",
+            "outcome": "I ended up with a pretty fun game! There's definitely some inefficienies in the back end I'd like to work out, just a side effect of learning and coding at the same time on a tight schedule. But it showed really well at Capstone Presentations and once people had the rules explained they seemed to really enjoy it. I'd like to add a few features that would make a big difference in how it plays, like a 30 second timer per turn anda final timer for the last person to finish. Overall though I was very happy with the final product and think there's plenty of room for improvement in the future",
+            "deployment": "rabble-rover.herokuapp.com"
+        }
+    ]
 }

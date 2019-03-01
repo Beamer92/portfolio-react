@@ -36,9 +36,9 @@ export default function Home(props){
 
             <h4>About Me</h4>
             <article className="flexbox bx b row"><br/>
-                <p className="col">
-                    {abtme.map(x => <div style={padBot}>{x}</div>)}
-                </p>
+                <div className="col">
+                    {abtme.map((x, idx) => <div key={idx} style={padBot}>{x}</div>)}
+                </div>
                 <span className="col-2"></span>
                 <img className="col" id="face" alt={''} src={require("./imgs/headshot.jpg")}/>
             </article>
