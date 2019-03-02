@@ -13,26 +13,24 @@ class App extends Component {
       projects: [],
       homePage: {}
     }
-
   }
 
-  componentDidMount(){
+  componentWillMount(){
     const jData = myData
     this.setState({
       projects: jData.projects.map(x => x),
       homePage: jData.homePage
     })
-
   }
 
   render() {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path='/' render={(props) => <Home homePage={this.state.homePage} p1={this.state.projects}/>}/>
-          <Route path='/p1' render={(props) => <Project projData={this.state.projects[0]}/>}/>
-          <Route path='/p2' render={(props) => <Project projData={this.state.projects[1]}/>}/>
-          <Route path='/p3' render={(props) => <Project projData={this.state.projects[2]}/>}/>
+          <Route path='/p0' render={(props) => <Project projData={this.state.projects[0]}/>}/>
+          <Route path='/p1' render={(props) => <Project projData={this.state.projects[1]}/>}/>
+          <Route path='/p2' render={(props) => <Project projData={this.state.projects[2]}/>}/>
+          <Route path='/' render={(props) => <Home homePage={this.state.homePage} proj={this.state.projects}/>}/>
         </Switch>
       </BrowserRouter>
     );

@@ -1,46 +1,27 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
 	background: #FFFFF6;
 }
 
-header.flexbox.head {
- justify-content: space-between;
- width:100%;
+header.head {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.abt {
+  flex-basis: 1;
 }
 
 .grow:hover { transform: scale(2.0); }
+
+.grow {
+    width: 20px;
+    height: 20px;
+}
+
+.padBot {
+  padding-bottom: 1em;
+}
 
 h1{
  padding-left: 20px;
@@ -61,6 +42,7 @@ h1{
 
 .container {
  padding-left: 0px;
+ max-width: 100%;
 }
 
 #contactlinks {
@@ -91,11 +73,13 @@ article p {
 }
 
 
-article.flexbox.bx.b{
+article.bx.b{
   padding-left: 20px;
+  flex-wrap: wrap;
 }
 
 article.bx{
+  display: flex;
   padding: 2px;
   padding-left: 20px;
   margin-top: 1em;
@@ -131,11 +115,6 @@ li {
 	width: 600px;
 }
 
-.flexbox{
-	display: flex;
-	flex-wrap: wrap;
-}
-
  .row {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -162,4 +141,9 @@ label {
 #submit {
 	margin:1em;
 	max-width: 150px;
+}
+
+.iconStyles{
+  width: 25px;
+  height: 25px;
 }
