@@ -17,16 +17,16 @@
     },
     "projects": [
         {
-            "title": "Adventure Puzzle",
-            "blurb": "Adventure inspired puzzle game, move around the grid to find hidden toggles to unlock hidden doors and move through the levels",
-            "github": "github.com/Beamer92/adventurePuzzle",
-            "explanation": "At Galvanize our Q1 project was focused around a static front-end site. I decided that this was a perfect opportunity to stretch my knowledge of HTML and CSS styling by making a grid-based game and using the re-render to move a piece around the DOM.",
-            "exp2": "",
-            "goals": ["Render a grid with the dimensions intended", "Render the player correctly on it's location as it moves about the grid", "Create a full game with multiple playable levels and scoring"],
-            "img": "https://github.com/Beamer92/adventurePuzzle/raw/master/imgCap.PNG?raw=true",
-            "challenges": [],
-            "outcome": "The most demanding part ended up being puzzle generation. Since each map is 2D array I had to generate them all in a way that makes sense, then figure out the mechanics of each. Easy, but time consuming. The most difficult part was making sure the visual aspect was a level of quality I was satisfied with. Making sure the grid resized well and visual aspect were responsive enough. The whole project was extremely fun to do. I also had a great group of testers to help point out flaws. Start to finish the project took me about a week and a half to complete outside of work and I'm pretty proud of it",
-            "deployment": "https://adventurepuzzle.surge.sh/"
+            "title": "Rabble Rover",
+            "blurb": "You're a NASA scientist in charge of the Mars Rover program, but hold on. The rocks on Mars are all curiously shaped like English letters! Race to collect the best letters before the other country's rovers and snag the high score!",
+            "github": "github.com/Beamer92/rabble-fe",
+            "explanation": "For my Final project at Galvanize I wanted to learn a few new things and try to measure my growth in the program with another game! I decided on a type of reverse-Scrabble multiplayer game. You and up to 3 other players per game control a Rover on a grid. You queue a list of instructions for your rover to execute all at once, which takes a bit of thought, and take turns collecting letters around the grid. At the end you submit the word you made for scoring and see how you stack up against the other players!",
+            "exp2": "The back end is an Express API server with user data in a MongoDB. I'm using Socket.io to allow for real-time multiplayer and Redis to store the game-state in memory. Real-Time interaction was something I thought was really interesting and wanted to explore. The front end is a React project.",
+            "goals": ["Learn about Redis and how it stores data in a cache-state as an alternative to using database storage", "Learn about Socket.io and real-time user interaction", "Explore a NoSql database", "Create a fun and engaging game, then create it with code"],
+            "challenges": ["Figuring out how I wanted to structure my Redis data took some time, and redesigns, and more redesigns", "Running a game-loop through socket.io and alerting all user's React states to request and re-render data at the correct times", "Closing the game loop by savings connected users, removing the old game, creating a new one, then adding those users back to it"],
+            "img": "https://github.com/Beamer92/rabble-fe/blob/master/src/imgs/screenshots/RoverSC1.png?raw=true",
+            "outcome": "I ended up with a pretty fun game! There's definitely some inefficienies in the back end I'd like to work out, just a side effect of learning and coding at the same time on a tight schedule. But it showed really well at Capstone Presentations and once people had the rules explained they seemed to really enjoy it. I'd like to add a few features that would make a big difference in how it plays, like a 30 second timer per turn anda final timer for the last person to finish. Overall though I was very happy with the final product and think there's plenty of room for improvement in the future",
+            "deployment": "rabble-rover.herokuapp.com"
         },
         {
             "title": "My Queue",
@@ -41,16 +41,16 @@
             "deployment": "https://infinite-fortress-92682.herokuapp.com/"
         },
         {
-            "title": "Rabble Rover",
-            "blurb": "You're a NASA scientist in charge of the Mars Rover program, but hold on. The rocks on Mars are all curiously shaped like English letters! Race to collect the best letters before the other country's rovers and snag the high score!",
-            "github": "github.com/Beamer92/rabble-fe",
-            "explanation": "For my Final project at Galvanize I wanted to learn a few new things and try to measure my growth in the program with another game! I decided on a type of reverse-Scrabble multiplayer game. You and up to 3 other players per game control a Rover on a grid. You queue a list of instructions for your rover to execute all at once, which takes a bit of thought, and take turns collecting letters around the grid. At the end you submit the word you made for scoring and see how you stack up against the other players!",
-            "exp2": "The back end is an Express API server with user data in a MongoDB. I'm using Socket.io to allow for real-time multiplayer and Redis to store the game-state in memory. Real-Time interaction was something I thought was really interesting and wanted to explore. The front end is a React project.",
-            "goals": ["Learn about Redis and how it stores data in a cache-state as an alternative to using database storage", "Learn about Socket.io and real-time user interaction", "Explore a NoSql database", "Create a fun and engaging game, then create it with code"],
-            "challenges": ["Figuring out how I wanted to structure my Redis data took some time, and redesigns, and more redesigns", "Running a game-loop through socket.io and alerting all user's React states to request and re-render data at the correct times", "Closing the game loop by savings connected users, removing the old game, creating a new one, then adding those users back to it"],
-            "img": "https://github.com/Beamer92/rabble-fe/blob/master/src/imgs/screenshots/RoverSC1.png?raw=true",
-            "outcome": "I ended up with a pretty fun game! There's definitely some inefficienies in the back end I'd like to work out, just a side effect of learning and coding at the same time on a tight schedule. But it showed really well at Capstone Presentations and once people had the rules explained they seemed to really enjoy it. I'd like to add a few features that would make a big difference in how it plays, like a 30 second timer per turn anda final timer for the last person to finish. Overall though I was very happy with the final product and think there's plenty of room for improvement in the future",
-            "deployment": "rabble-rover.herokuapp.com"
+            "title": "Adventure Puzzle",
+            "blurb": "Adventure inspired puzzle game, move around the grid to find hidden toggles to unlock hidden doors and move through the levels",
+            "github": "github.com/Beamer92/adventurePuzzle",
+            "explanation": "At Galvanize our Q1 project was focused around a static front-end site. I decided that this was a perfect opportunity to stretch my knowledge of HTML and CSS styling by making a grid-based game and using the re-render to move a piece around the DOM.",
+            "exp2": "",
+            "goals": ["Render a grid with the dimensions intended", "Render the player correctly on it's location as it moves about the grid", "Create a full game with multiple playable levels and scoring"],
+            "img": "https://github.com/Beamer92/adventurePuzzle/raw/master/imgCap.PNG?raw=true",
+            "challenges": [],
+            "outcome": "The most demanding part ended up being puzzle generation. Since each map is 2D array I had to generate them all in a way that makes sense, then figure out the mechanics of each. Easy, but time consuming. The most difficult part was making sure the visual aspect was a level of quality I was satisfied with. Making sure the grid resized well and visual aspect were responsive enough. The whole project was extremely fun to do. I also had a great group of testers to help point out flaws. Start to finish the project took me about a week and a half to complete outside of work and I'm pretty proud of it",
+            "deployment": "https://adventurepuzzle.surge.sh/"
         }
     ]
 }
